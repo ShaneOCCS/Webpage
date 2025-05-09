@@ -254,79 +254,6 @@ section {
     transform: translateX(10px);
 }
 
-/* Projects Section */
-#projects {
-    background-color: var(--second-background);
-    padding: 8% 10%;
-}
-
-.projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.project-card {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 0.8rem;
-    padding: 1.5rem;
-    transition: var(--transition);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;
-    flex-direction: column;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.iframe-container {
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
-    margin: 1rem 0;
-    border-radius: 0.5rem;
-    overflow: hidden;
-}
-
-.iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-    background: #000;
-}
-
-.project-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    color: var(--accent-color);
-    text-decoration: none;
-    font-weight: 500;
-    transition: var(--transition);
-}
-
-.project-link:hover {
-    text-decoration: underline;
-    transform: translateX(5px);
-}
-
-@media (max-width: 768px) {
-    .projects-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .iframe-container {
-        padding-top: 75%; /* 4:3 for mobile */
-    }
-}
-
 /* Services Section */
 #services {
     flex-direction: column;
@@ -544,8 +471,6 @@ section {
     font-size: 1rem;
     padding: 1rem;
 }
-
-
 
 @media (max-width: 992px) {
     nav {
