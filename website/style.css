@@ -472,6 +472,11 @@ section {
     padding: 1rem;
 }
 
+.download-btn {
+  border: none;
+  outline: none;
+}
+
 @media (max-width: 992px) {
     nav {
         padding: 1.5em 5%;
